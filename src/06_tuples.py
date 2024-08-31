@@ -35,6 +35,11 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
+def print_tuple(tu):
+    if isinstance(tu, tuple):
+        print('\n'.join(str(num) for num in tu))
+    else:
+        print(tu)
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
